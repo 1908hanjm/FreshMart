@@ -9,6 +9,21 @@ A business case study analyzing day-of-week demand patterns and spoilage risk in
 - **Dataset**: [Kaggle — Perishable Goods Management](https://www.kaggle.com/datasets/likithagedipudi/perishable-goods-management) (100,000 synthetic transaction records, 2023–2024, 50 stores × 5 US regions, 10 product categories)
 - **Tools**: Python (pandas, NumPy, matplotlib, seaborn), Jupyter Notebook, Tableau
 
+## 🔍 Key Findings
+
+| Metric | Value |
+|---|---|
+| Meat avg waste rate | **18.2%** |
+| Weekday waste vs weekend | **~20%** vs **~13%** |
+| Meat waste cost | **$3.5M** (45% of meat profit) |
+| Markdown margin | **−17%** (applied too late, median 2 days to expiry) |
+| Simulated saving (right-sized weekday orders) | **~$1.09M** (30.9% of meat waste cost) |
+
+**Insights:**
+1. **Weekday over-ordering drives waste** — orders stay flat (~255 units) while demand drops on weekdays (~207 sold) vs weekends (~229 sold).
+2. **Markdowns backfire** — applied at a median of 2 days to expiry, they lose 17% margin instead of preventing waste.
+3. **Simulation** — matching weekday order buffers to weekend levels cuts weekday waste from ~20% to ~12.5%.
+
 ## 📁 Repository Structure
 
 ```text
@@ -16,7 +31,7 @@ FreshMart/
 ├── notebooks/
 │   ├── 01_data_cleaning.ipynb   # Data audit, missing values, date handling
 │   ├── 02_eda.ipynb             # Day-of-week demand patterns, category & regional analysis
-│   └── 03_waste_analysis.ipynb  # Spoilage risk scoring & order-quantity recommendations
+│   └── 03_waste_analysis.ipynb  # Order-quantity simulation & recommendations
 ├── .gitignore
 └── README.md
 ```

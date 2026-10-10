@@ -8,6 +8,7 @@ A business case study analyzing day-of-week demand patterns and spoilage risk in
 - **Goal**: Analyze demand patterns by weekday, category, and store — then recommend order quantities that minimize waste without losing sales.
 - **Dataset**: [Kaggle — Perishable Goods Management](https://www.kaggle.com/datasets/likithagedipudi/perishable-goods-management) (100,000 synthetic transaction records, 2023–2024, 50 stores × 5 US regions, 10 product categories)
 - **Tools**: Python (pandas, NumPy, matplotlib, seaborn), Jupyter Notebook, Tableau
+- **Interactive Dashboard**: [FreshMart Meat Demand & Waste Reduction (Tableau Public)](https://public.tableau.com/app/profile/dave.han6326/viz/FreshMartMeatDemandWasteReduction/MeatWeekdayDemandvsWaste)
 
 ## 🔍 Key Findings
 
